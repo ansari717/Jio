@@ -3,7 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto Refreshing Page</title>
+  <title>Auto Refreshing Ads Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .content {
+      text-align: center;
+    }
+  </style>
   <script>
     // JavaScript to reload the page at random intervals
     function setRandomRefresh() {
@@ -15,21 +33,25 @@
   </script>
 </head>
 <body onload="setRandomRefresh()">
-  <h1>Welcome to the Ad Page</h1>
-  <p>This page will refresh randomly every 1 to 10 seconds.</p>
-  
-  <!-- Google Ads Integration -->
-  <div style="text-align: center;">
-    <!-- Replace this script with your Google AdSense code -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXX"  <!-- Replace with your AdSense ID -->
-         data-ad-slot="XXXXXXXXXX"               <!-- Replace with your Ad Slot ID -->
-         data-ad-format="auto"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+  <div class="content">
+    <!-- Centered Image -->
+    <img src="Jiocoin.avif" alt="Centered Image" />
+    <h1>Welcome to the Jio Page</h1>
+    <p>This page will refresh randomly every 1 to 10 seconds.</p>
+
+    <!-- Google Ads Integration -->
+    <div style="margin-top: 20px;">
+      <!-- Replace this script with your Google AdSense code -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXX"  <!-- Replace with your AdSense ID -->
+           data-ad-slot="XXXXXXXXXX"               <!-- Replace with your Ad Slot ID -->
+           data-ad-format="auto"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </div>
 </body>
 </html>
